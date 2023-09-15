@@ -31,26 +31,66 @@
         background-attachment: fixed;
         background-size: cover;
       }
-
-      a {
-        margin: 15px;
-        color: black;
-        text-decoration: none;
-        text-transform: none;
-        font-weight: 800;
+      bg {
+        position: fixed; /* or absolute */
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
       }
 
-      a:hover {
-        color: black;
+      m1 {
+        position: fixed; /* or absolute */
+        top: 30%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+      }
+      m2 {
+        position: fixed; /* or absolute */
+        top: 30%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+      }
+      m3 {
+        position: fixed; /* or absolute */
+        top: 50%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+      }
+      m4 {
+        position: fixed; /* or absolute */
+        top: 70%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+      }
+      m5 {
+        position: fixed; /* or absolute */
+        top: 70%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+      }
+      m6 {
+        position: fixed; /* or absolute */
+        top: 50%;
+        left: 33%;
+        transform: translate(-50%, -50%);
       }
     </style>
     <title>DAFI Science Club</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
   </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--                      Body                        -->
   <body>
-    <img src="images/tujuan.png" alt="Tujuan Pembelajaran" width="20%" />
+    <m1><img src="images/tujuan.png" alt="Tujuan" height="90" /></m1>
+    <m2><img src="images/materi.png" alt="Materi" height="90" /> </m2>
+    <m3><img src="images/simulasi.png" alt="Simulasi" height="90" /> </m3>
+    <m4><img src="images/quiz.png" alt="Quiz" height="90" /> </m4>
+    <m5><img src="images/informasi.png" alt="Informasi" height="90" /></m5>
+    <m6><img src="images/instruksi.png" alt="Instruksi" height="90" /></m6>
+
+    <bg>
+      <img width="100%" src="images/white-bg.png" />
+    </bg>
 
     <!--                   Script                       -->
     <script>
