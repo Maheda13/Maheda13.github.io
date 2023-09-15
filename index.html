@@ -32,15 +32,6 @@
         background-size: cover;
       }
 
-      .logo {
-        flex: 1 1 auto;
-        margin-left: 9%;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 30pt;
-        justify-content: center;
-      }
       a {
         margin: 15px;
         color: black;
@@ -59,38 +50,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--                      Body                        -->
   <body>
+    <img src="images/tujuan.png" alt="Tujuan Pembelajaran" height="100px" />
+
     <!--                   Script                       -->
     <script>
       feather.replace();
-
-      /* Get the documentElement (<html>) to display the page in fullscreen */
-      var elem = document.documentElement;
-
-      /* View in fullscreen */
-      function openFullscreen() {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-          /* Safari */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-          /* IE11 */
-          elem.msRequestFullscreen();
-        }
-      }
-
-      /* Close fullscreen */
-      function closeFullscreen() {
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          /* Safari */
-          document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-          /* IE11 */
-          document.msExitFullscreen();
-        }
-      }
     </script>
   </body>
 </html>
