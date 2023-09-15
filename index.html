@@ -30,7 +30,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        orientation: landscape;
       }
       /* bg {
         position: fixed;
@@ -44,37 +43,31 @@
         position: fixed; /* or absolute */
         top: 27%;
         left: 40%;
-        transform: translate(-50%, -50%);
       }
       m2 {
         position: fixed; /* or absolute */
         top: 27%;
         left: 60%;
-        transform: translate(-50%, -50%);
       }
       m3 {
         position: fixed; /* or absolute */
         top: 52%;
         left: 77%;
-        transform: translate(-50%, -50%);
       }
       m4 {
         position: fixed; /* or absolute */
         top: 77%;
         left: 60%;
-        transform: translate(-50%, -50%);
       }
       m5 {
         position: fixed; /* or absolute */
         top: 77%;
         left: 40%;
-        transform: translate(-50%, -50%);
       }
       m6 {
         position: fixed; /* or absolute */
         top: 52%;
         left: 25%;
-        transform: translate(-50%, -50%);
       }
 
       button {
@@ -216,6 +209,16 @@
 
     <!--                   Script                       -->
     <script>
+      document.addEventListener("orientationchange", function (event) {
+        switch (window.orientation) {
+          case -90:
+          case 90:
+            /* Device is in landscape mode */
+            break;
+          default:
+          /* Device is in portrait mode */
+        }
+      });
       feather.replace();
 
       if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
