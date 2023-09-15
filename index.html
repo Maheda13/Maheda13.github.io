@@ -178,31 +178,35 @@
 
     <m1>
       <button>
-        <img src="images/tujuan.png" alt="btTujuan" />
+        <img src="images/tujuan.png" alt="btTujuan" height="110px" />
       </button>
     </m1>
     <m2>
       <button>
-        <img src="images/materi.png" alt="btMateri" />
+        <img src="images/materi.png" alt="btMateri" height="110px" />
       </button>
     </m2>
     <m3>
       <button>
-        <img src="images/quiz.png" alt="btQuiz" /></button
+        <img src="images/quiz.png" alt="btQuiz" height="110px" /></button
     ></m3>
     <m4>
       <button>
-        <img src="images/informasi.png" alt="btInformasi"/>
+        <img src="images/informasi.png" alt="btInformasi" height="110px" />
       </button>
     </m4>
     <m5>
       <button>
-        <img src="images/instruksi.png" alt="btInstruksi"/>
+        <img src="images/instruksi.png" alt="btInstruksi" height="100px" />
       </button>
     </m5>
     <m6>
       <button>
-        <img src="images/simulasi.png" alt="btSimulasi"  /></button
+        <img
+          src="images/simulasi.png"
+          alt="btSimulasi"
+          height="100px"
+        /></button
     ></m6>
 
     <!-- <bg>
@@ -212,7 +216,6 @@
     <!--                   Script                       -->
     <script>
       feather.replace();
-      screen.orientation.lock("landscape");
 
       if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
         const toggleBtn = document.querySelector(".js-toggle-fullscreen-btn");
@@ -229,6 +232,7 @@
         document.head.appendChild(styleEl);
 
         toggleBtn.addEventListener("click", function () {
+          screen.orientation.lock("landscape");
           if (document.fullscreen) {
             document.exitFullscreen();
           } else if (document.webkitFullscreenElement) {
