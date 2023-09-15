@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,800;0,900;1,300;1,400;1,600;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
@@ -23,7 +23,7 @@
       }
 
       body {
-        font-family: "Raleway", sans-serif;
+        font-family: "Fredoka", sans-serif;
         background-color: #212a3e;
         color: #ffffff;
         background-image: url("images/home-bg.png");
@@ -35,25 +35,25 @@
         position: fixed; /* or absolute */
         top: 50%;
         left: 50%;
-        z-index: -1;
-        transform: translate(-50%, -50%);
+        z-index: -2;
+        transform: translate(-60%, -50%);
       }
 
       m1 {
         position: fixed; /* or absolute */
-        top: 30%;
-        left: 43%;
+        top: 26%;
+        left: 35%;
         transform: translate(-50%, -50%);
       }
       m2 {
         position: fixed; /* or absolute */
-        top: 30%;
-        left: 57%;
+        top: 28%;
+        left: 60%;
         transform: translate(-50%, -50%);
       }
       m3 {
         position: fixed; /* or absolute */
-        top: 50%;
+        top: 48%;
         left: 67%;
         transform: translate(-50%, -50%);
       }
@@ -66,14 +66,36 @@
       m5 {
         position: fixed; /* or absolute */
         top: 70%;
-        left: 43%;
+        left: 42%;
         transform: translate(-50%, -50%);
       }
       m6 {
         position: fixed; /* or absolute */
-        top: 50%;
-        left: 33%;
+        top: 46%;
+        left: 38%;
         transform: translate(-50%, -50%);
+      }
+
+      button {
+        z-index: -1;
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        background-color: inherit;
+        transition: transform 0.7s ease-in-out;
+        margin-left: 10px;
+      }
+      button:hover {
+        transform: scale(1.1) perspective(1px);
+      }
+
+      .hide {
+        opacity: 0;
+        z-index: 1;
+      }
+
+      .planet:hover .hide {
+        opacity: 1;
       }
     </style>
     <title>DAFI Science Club</title>
@@ -81,15 +103,100 @@
   </head>
   <!--                      Body                        -->
   <body>
-    <m1><img src="images/tujuan.png" alt="Tujuan" height="90" /></m1>
-    <m2><img src="images/materi.png" alt="Materi" height="90" /> </m2>
-    <m3><img src="images/simulasi.png" alt="Simulasi" height="90" /> </m3>
-    <m4><img src="images/quiz.png" alt="Quiz" height="90" /> </m4>
-    <m5><img src="images/informasi.png" alt="Informasi" height="90" /></m5>
-    <m6><img src="images/instruksi.png" alt="Instruksi" height="90" /></m6>
+    <m1 class="planet">
+      <img
+        class="hide"
+        src="images/txtMateri.png"
+        alt="txtTujuan"
+        height="25"
+        style="rotate: -25deg"
+      />
+      <br />
+      <button>
+        <img
+          src="images/tujuan.png"
+          alt="btTujuan"
+          height="90"
+          style="margin-left: 20%"
+        />
+      </button>
+    </m1>
+    <m2 class="planet">
+      <img
+        class="hide"
+        src="images/txtQuiz.png"
+        alt="txtTujuan"
+        height="25"
+        style="margin-left: 35%; rotate: 20deg"
+      />
+      <button>
+        <img src="images/materi.png" alt="btMateri" height="90" />
+      </button>
+    </m2>
+    <m3 class="planet">
+      <img
+        class="hide"
+        src="images/txtSimulasi.png"
+        alt="txtTujuan"
+        height="25"
+        style="margin-left: 25%" />
 
-    <bg>
-      <img width="100%" src="images/white-bg.png" />
+      <button>
+        <img
+          src="images/simulasi.png"
+          alt="btSimulasi"
+          height="90"
+          style="margin-left: 20%; margin-top: 5%"
+        /></button
+    ></m3>
+    <m4 class="planet">
+      <button><img src="images/quiz.png" alt="btQuiz" height="90" /></button>
+      <br />
+      <img
+        class="hide"
+        src="images/txtInstruksi.png"
+        alt="txtTujuan"
+        height="40"
+        style="margin-top: 0%; margin-left: 38%; rotate: -20deg"
+      />
+    </m4>
+    <m5 class="planet">
+      <button>
+        <img
+          src="images/informasi.png"
+          alt="btInformasi"
+          height="90"
+          style="margin-left: 27%"
+        />
+      </button>
+      <br />
+      <img
+        class="hide"
+        src="images/txtInformasi.png"
+        alt="txtTujuan"
+        height="40"
+        style="margin-top: 2%; rotate: 10deg"
+      />
+    </m5>
+    <m6 class="planet">
+      <img
+        class="hide"
+        src="images/txtTujuan.png"
+        alt="txtTujuan"
+        height="40"
+        style="margin-left: 15%; rotate: 10deg" />
+      <button>
+        <br />
+        <img
+          src="images/instruksi.png"
+          alt="btInstruksi"
+          height="90"
+          style="margin-top: 0%"
+        /></button
+    ></m6>
+
+    <bg class="bgr">
+      <img width="120%" src="images/white-bg.png" />
     </bg>
 
     <!--                   Script                       -->
