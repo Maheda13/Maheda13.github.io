@@ -26,53 +26,53 @@
         font-family: "Fredoka", sans-serif;
         background-color: #212a3e;
         color: #ffffff;
-        background-image: url("images/home-bg.png");
+        background-image: url("images/home-bg1.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
-      bg {
-        position: fixed; /* or absolute */
+      /* bg {
+        position: fixed;
         top: 50%;
         left: 50%;
         z-index: -2;
         transform: translate(-60%, -50%);
-      }
+      } */
 
       m1 {
         position: fixed; /* or absolute */
-        top: 26%;
-        left: 35%;
+        top: 27%;
+        left: 40%;
         transform: translate(-50%, -50%);
       }
       m2 {
         position: fixed; /* or absolute */
-        top: 28%;
+        top: 27%;
         left: 60%;
         transform: translate(-50%, -50%);
       }
       m3 {
         position: fixed; /* or absolute */
-        top: 48%;
-        left: 67%;
+        top: 59%;
+        left: 77%;
         transform: translate(-50%, -50%);
       }
       m4 {
         position: fixed; /* or absolute */
-        top: 70%;
-        left: 57%;
+        top: 85%;
+        left: 60%;
         transform: translate(-50%, -50%);
       }
       m5 {
         position: fixed; /* or absolute */
-        top: 70%;
-        left: 42%;
+        top: 85%;
+        left: 40%;
         transform: translate(-50%, -50%);
       }
       m6 {
         position: fixed; /* or absolute */
-        top: 46%;
-        left: 38%;
+        top: 60%;
+        left: 25%;
         transform: translate(-50%, -50%);
       }
 
@@ -88,116 +88,44 @@
       button:hover {
         transform: scale(1.1) perspective(1px);
       }
-
-      .hide {
-        opacity: 0;
-        z-index: 1;
-      }
-
-      .planet:hover .hide {
-        opacity: 1;
-      }
     </style>
     <title>DAFI Science Club</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
   </head>
   <!--                      Body                        -->
   <body>
-    <m1 class="planet">
-      <img
-        class="hide"
-        src="images/txtMateri.png"
-        alt="txtTujuan"
-        height="25"
-        style="rotate: -25deg"
-      />
-      <br />
+    <m1>
       <button>
-        <img
-          src="images/tujuan.png"
-          alt="btTujuan"
-          height="90"
-          style="margin-left: 20%"
-        />
+        <img src="images/tujuan.png" alt="btTujuan" height="110" />
       </button>
     </m1>
-    <m2 class="planet">
-      <img
-        class="hide"
-        src="images/txtQuiz.png"
-        alt="txtTujuan"
-        height="25"
-        style="margin-left: 35%; rotate: 20deg"
-      />
+    <m2>
       <button>
-        <img src="images/materi.png" alt="btMateri" height="90" />
+        <img src="images/materi.png" alt="btMateri" height="110" />
       </button>
     </m2>
-    <m3 class="planet">
-      <img
-        class="hide"
-        src="images/txtSimulasi.png"
-        alt="txtTujuan"
-        height="25"
-        style="margin-left: 25%" />
-
+    <m3>
       <button>
-        <img
-          src="images/simulasi.png"
-          alt="btSimulasi"
-          height="90"
-          style="margin-left: 20%; margin-top: 5%"
-        /></button
+        <img src="images/quiz.png" alt="btQuiz" height="110" /></button
     ></m3>
-    <m4 class="planet">
-      <button><img src="images/quiz.png" alt="btQuiz" height="90" /></button>
-      <br />
-      <img
-        class="hide"
-        src="images/txtInstruksi.png"
-        alt="txtTujuan"
-        height="40"
-        style="margin-top: 0%; margin-left: 38%; rotate: -20deg"
-      />
-    </m4>
-    <m5 class="planet">
+    <m4>
       <button>
-        <img
-          src="images/informasi.png"
-          alt="btInformasi"
-          height="90"
-          style="margin-left: 27%"
-        />
+        <img src="images/informasi.png" alt="btInformasi" height="110" />
       </button>
-      <br />
-      <img
-        class="hide"
-        src="images/txtInformasi.png"
-        alt="txtTujuan"
-        height="40"
-        style="margin-top: 2%; rotate: 10deg"
-      />
-    </m5>
-    <m6 class="planet">
-      <img
-        class="hide"
-        src="images/txtTujuan.png"
-        alt="txtTujuan"
-        height="40"
-        style="margin-left: 15%; rotate: 10deg" />
+    </m4>
+    <m5>
       <button>
-        <br />
-        <img
-          src="images/instruksi.png"
-          alt="btInstruksi"
-          height="90"
-          style="margin-top: 0%"
-        /></button
+        <img src="images/instruksi.png" alt="btInstruksi" height="110" />
+      </button>
+    </m5>
+    <m6>
+      <button>
+        <img src="images/simulasi.png" alt="btSimulasi" height="110" /></button
     ></m6>
 
-    <bg class="bgr">
+    <!-- <bg>
       <img width="120%" src="images/white-bg.png" />
-    </bg>
+    </bg> -->
 
     <!--                   Script                       -->
     <script>
