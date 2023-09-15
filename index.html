@@ -30,6 +30,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        orientation: landscape;
       }
       /* bg {
         position: fixed;
@@ -232,7 +233,6 @@
         document.head.appendChild(styleEl);
 
         toggleBtn.addEventListener("click", function () {
-          screen.orientation.lock("landscape");
           if (document.fullscreen) {
             document.exitFullscreen();
           } else if (document.webkitFullscreenElement) {
